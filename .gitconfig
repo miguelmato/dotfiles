@@ -1,5 +1,43 @@
 [user]
 	name = Miguel Mato
 	email = 114481466+miguelmato@users.noreply.github.com
+
 [core]
 	excludesFile = /Users/miguel/.gitignore_global
+
+[push]
+	autoSetupRemote = true
+
+[alias]
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+	
+	a = add
+
+	b = branch
+
+	c = commit
+	cm = c -m
+
+	co = checkout
+	
+	ls = ls-files
+	list-hidden = !git ls-files -v grep '^[a-z] | cut -c3-'
+	list-ignored = !git status -s --ignored | grep '^!!' | cut -c4-
+	list-untracked = ls-files --others --exclude-standard
+	lsh = list-hidden
+	lsi = list-ignored
+	lsu = list-untracked
+
+	m = merge
+	
+	p = push
+
+	pl = pull
+
+	st = stash
+
+	url = remote get-url origin
+	info = remote show origin
+	rao = remote add origin
+	rso = remote set-url origin
+

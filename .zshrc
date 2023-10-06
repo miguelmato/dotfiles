@@ -10,8 +10,12 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
+mkcd () { mkdir -p "$1" && cd "$1" }
+
 alias ..='cd ..'
 alias ...='cd ../..'
+
+alias g='git '
 
 alias lsa='ls -a'
 

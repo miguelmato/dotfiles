@@ -1,0 +1,8 @@
+{
+  "enable-web": false,
+  "enable-linux-desktop": false,
+  "enable-windows-desktop": false,
+  "enable-macos-desktop": false,
+  "enable-fuchsia": false,
+  "enable-custom-devices": false
+}

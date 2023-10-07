@@ -42,4 +42,4 @@ android () {
 	adb connect $ANDROID_IP:$PORT
 }
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
